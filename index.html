@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Array and loop are made for each other</h1>
+    <!-- <h1>Array and loop are made for each other</h1> -->
     <script>
         // let temperatures = [28,27,28,30,32,26]
         // temperature [0] = temp[0] * 1.8 + 32
@@ -24,9 +24,18 @@
     //         return eachItem
     //     })
     //     console.log(temperatures);
-    let i ;
-    for(i = 1 ; i < 11 ; i++)
-    console.log(i);
+    // let i ;
+    // for(i = 1 ; i < 11 ; i++)
+    // console.log(i);
+
+    // Array cloning
+
+    let arr1 = [12 , 13 ,14];
+    let copy = [...arr1];
+    copy.push (15);
+    console.log(copy);
+    console.log(arr1);
+    
           </script>
 </body>
 </html>

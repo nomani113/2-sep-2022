@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ES6 FUNCTIONS</h1>
+    <form onsubmit="submitfunction(); return false">
+    total marks: <input type="number" id="total" > <br><br>
+    total marks: <input type="number" id="total" >
+    </form>
+
+    <script>
+        // function dosum(num1 , num2)
+        // {
+        //     return num1 + num2;
+        // }
+        // document.write(dosum (54 , 54) );
+
+function calcpercentage(total,obtain)
+{
+    if(!total || !obtain){
+        return null
+    }
+    if(typeof(total)!== "number" || typeof(obtain)!== "number"){
+        return null
+    }
+    if(obtain > total){
+        return null
+    }
+    let per = (obtain * 100) / total;
+    per = per.toFixed(0);
+    per = Number(per);
+    return per ;
+}
+
+
+    </script>
+</body>
+</html>
